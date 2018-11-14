@@ -23,7 +23,8 @@
         <commons-lang.version>3.8.1</commons-lang.version>
         <commons-collections.version>4.1</commons-collections.version>
         <servlet-api.version>4.0.1</servlet-api.version>
-        <jetty.version>9.4.12.v20180830</jetty.version>
+        <jetty-plugin.version>9.4.12.v20180830</jetty-plugin.version>
+        <war-plugin.version>3.2.2</war-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -74,7 +75,7 @@
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>${jetty.version}</version>
+                <version>${jetty-plugin.version}</version>
                 <configuration>
                     <skip>true</skip>
                 </configuration>
